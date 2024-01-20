@@ -1,0 +1,10 @@
+14:50:04 **** Incremental Build of configuration Debug for project init_USART_pin ****
+make -j16 all 
+arm-none-eabi-size  init_USART_pin.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1040	     12	   1572	   2624	    a40	init_USART_pin.elf
+Finished building: default.size.stdout
+ 
+
+14:50:05 Build Finished. 0 errors, 0 warnings. (took 240ms)
+

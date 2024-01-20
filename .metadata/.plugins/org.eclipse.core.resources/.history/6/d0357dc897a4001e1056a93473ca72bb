@@ -1,0 +1,59 @@
+#include <stm32f405xx.h>
+uint8_t read_Ch;
+uint8_t ch;
+void USART_init(void);
+void USART_write(uint8_t);
+uint8_t USART_read(void);
+void delayMS(int);
+#define size 4
+uint8_t a[size]={11,12,13,14};
+
+int  main(void){
+	USART3_init();
+	while(1){
+		{
+		for(int i=0;i<4; i++)
+		USART3_write(a[i]);
+		delayMs(100);
+		read_Ch = USART3_read();
+		delayMs (100);
+		}
+	}
+}
+void USART3_init (void) {
+	RCC->AHB1ENR |= (1<<2);  // Enable GPIOC clock
+	RCC->APB1ENR |= (1<<18); //Enable USART3 clock
+
+	//PC10 is the TX PIN for USART3
+	GPIOC->MODER &=~(3<<20); //PC10 cleared bit 21, 20
+	GPIOC->MODER |=(1<<21); //PC10 in AFR mode, set bit 21
+	GPIOC->AFR[1] &= ~(0XF<<8); // AFRH since pin10, Clearing the corresponding bits-Bit 11 10 9 8
+	GPIOC->AFR[1] = (7<<8); //AF7(0111) -Setting bits 10 9 8
+
+	//PC11 is the RX PIN for USART3
+	GPIOC->MODER &=~(3<<22); //PC11, cleared bit 23,22
+	GPIOC->MODER |= (1<<23); //PC11 in AFR mode, set hit 23, AF-19
+	GPIOC->AFR[1] &= ~(0XF<<12); // AFRH since pill, Clearing the corresponding bits Bit 15 14 13 12
+	GPIOC->AFR[1] |= (7<<12); //AF7(0111) -Setting bits 14 13 12
+
+	//USART3 Settings
+	USART3->BRR = 0x0683; // 9600 baod @ 16 MHZ
+	USART3->CR1 = (0XC<<0); //Enable RE and TE bits -1100 -bit 3,2
+	USART3->CR2 =0; // 1 stop bit (00) Bits 13 12 corresponding to number of stop bits
+	USART3->CR3 = 0; // Default settings
+	USART3->CR1 = (1<<13); //USART3 Enable
+}
+
+void USART3_write(uint8_t ch){
+	while(!(USART3->SR & (1<<7))){}
+	USART3->DR = (ch & 0xFF);
+}
+uint8_t USART3_read(void){
+	while(!(Usart3->SR &(1<<5))){}
+	return USART3->DR;
+}
+void delayMs(int n){
+	int i;
+	for(;n>0;n--)
+		for(i=0;i<2000;i++);
+}

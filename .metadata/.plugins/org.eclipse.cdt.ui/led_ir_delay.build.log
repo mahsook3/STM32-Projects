@@ -1,0 +1,10 @@
+13:20:56 **** Incremental Build of configuration Debug for project led_ir_delay ****
+make -j16 all 
+arm-none-eabi-size  led_ir_delay.elf 
+   text	   data	    bss	    dec	    hex	filename
+    856	      8	   1568	   2432	    980	led_ir_delay.elf
+Finished building: default.size.stdout
+ 
+
+13:20:57 Build Finished. 0 errors, 0 warnings. (took 326ms)
+

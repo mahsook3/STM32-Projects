@@ -1,0 +1,49 @@
+15:13:11 **** Incremental Build of configuration Debug for project Final_Project ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Final_Project.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\STM32CubelDE Workspace\Final_Project\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Final_Project.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Final_Project.elf
+ 
+arm-none-eabi-size  Final_Project.elf 
+arm-none-eabi-objdump -h -S Final_Project.elf  > "Final_Project.list"
+   text	   data	    bss	    dec	    hex	filename
+   1240	      8	   1568	   2816	    b00	Final_Project.elf
+Finished building: default.size.stdout
+ 
+Finished building: Final_Project.list
+ 
+15:13:19 **** Incremental Build of configuration Debug for project Final_Project ****
+make -j16 all 
+arm-none-eabi-size  Final_Project.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1240	      8	   1568	   2816	    b00	Final_Project.elf
+Finished building: default.size.stdout
+ 
+15:14:28 **** Incremental Build of configuration Debug for project Final_Project ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Final_Project.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\STM32CubelDE Workspace\Final_Project\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Final_Project.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Final_Project.elf
+ 
+arm-none-eabi-size  Final_Project.elf 
+arm-none-eabi-objdump -h -S Final_Project.elf  > "Final_Project.list"
+   text	   data	    bss	    dec	    hex	filename
+   1240	      8	   1568	   2816	    b00	Final_Project.elf
+Finished building: default.size.stdout
+ 
+Finished building: Final_Project.list
+ 
+15:18:47 **** Incremental Build of configuration Debug for project Final_Project ****
+make -j16 all 
+arm-none-eabi-size  Final_Project.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1240	      8	   1568	   2816	    b00	Final_Project.elf
+Finished building: default.size.stdout
+ 
+15:21:28 **** Incremental Build of configuration Debug for project Final_Project ****
+make -j16 all 
+arm-none-eabi-size  Final_Project.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1240	      8	   1568	   2816	    b00	Final_Project.elf
+Finished building: default.size.stdout
+ 

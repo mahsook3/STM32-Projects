@@ -1,0 +1,16 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:onLED Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:adc Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:led_ir_delay Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:timerPeripheral1 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:controlLED_withPot Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:led_brightness_pot Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Timer Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:5V_by_IRsensor Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:init_USART_pin Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:CAN Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Final_Project Debug
+eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:5V_by_IRsensor\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:5V_by_IRsensor\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Timer\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Timer\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:adc\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:adc\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:controlLED_withPot\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:init_USART_pin\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:onLED\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:onLED\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:timerPeripheral1\ Debug/activeLaunchMode=debug

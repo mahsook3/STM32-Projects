@@ -1,0 +1,10 @@
+15:32:45 **** Incremental Build of configuration Debug for project controlLED_withPot ****
+make -j16 all 
+arm-none-eabi-size  controlLED_withPot.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3260	      8	   1576	   4844	   12ec	controlLED_withPot.elf
+Finished building: default.size.stdout
+ 
+
+15:32:45 Build Finished. 0 errors, 0 warnings. (took 242ms)
+

@@ -1,0 +1,5 @@
+../Src/main.c:14:5:main	2
+../Src/main.c:26:6:USART3_init	1
+../Src/main.c:50:6:USART3_write	2
+../Src/main.c:55:9:USART3_read	2
+../Src/main.c:60:6:delayMs	3
